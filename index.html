@@ -4,34 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <title>Code Lab</title>
 </head>
 <body>
+    <section class="grid-top">
     
     <nav class="nav-container">
-        <!--<img src="./images/favicon.png">-->
+        
+        
         <a>Home</a>
         <a>Course Catalog</a>
         <a>Resources</a>
         <a>Community</a>
     </nav>
     <header class="halo-container">
-        <h1>Learning to code is hard.</h1>
-        <h2 class="halo-h2">We're here to make it easier</h2>
+        <div class="typewriter">
+        <h1>Learning to code is <span
+            class="txt-rotate"
+            data-period="2000"
+            data-rotate='[ "hard.", "not for me.", "time consuming.", "a mess.", "horrifying" ]'></span> </h1>
+       
+       
+    </div>
+</section>
+       
+            
 
     </header>
     <main>
+        <h1 class="h1-main">We're here to make it easier</h1>
+        
+        
+           
 
-        <section class="sign-up-container">
         <div class="learning-container">
             <h2>At codeLab we teach you to program with step-by-step tutorials</h2>
-            <h3>We have all been at the start of our careers, looking into the dark abyss of development. 
-                Through our own experiences we have chosen to develop a platform that will help you to become
+            <h3>We have all been at the start of our careers, looking into the dark abyss of development. </h3>
+               <h3> Through our own experiences we have chosen to develop a platform that will help you to become
             the best you can be</h3>
+        </div>
+        <div class="quiz-container flex">
+            <h2>Not sure how to start?</h2>
+            <h3>Don't worry, we will help you make sense of it all</h3>
+            <button>Take Our Quiz</button>
         </div>
         <div class="form-container">
             <form class="sign-up-form">
-                <div class="input-container">
+                <div class="input-container flex">
+                <h3>Don't wait! Get started today:</h3>
                 <label>Email</label>
                 <input> <br>
                 <label>Password</label>
@@ -40,35 +61,60 @@
             </div>
            
                 <p class="terms-of-service"> By signing up fore codeLab, you agree to codeLab's <br> 
-                    Terms of Service & Privacy Policy
+                   <a href="">Terms of Service</a>  & <a href="">Privacy Policy</a> 
                 </p>
                 <h3>Or sign up using:</h3>
                 <div class="button-container">
-                
-
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-google"></i>
+                    <i class="fab fa-facebook"></i>                  
                 </div>   
             </form>
         </div>
-    </section>
+   
 
+    
+        
 
-        <div class="quiz-container">
-            <h2>Not sure how to start?</h2>
-            <h3>Don't worry, we will help you make sense of it all</h3>
-            <button>Take Our Quiz</button>
+        <div class="roadmap-container">
+            <h2>We will help you to customize your journey</h2>
+            <h3>Finding where to start is always the hardest part</h3>
         </div>
 
 
         <div class="cta-container">
-            <h2>It is time for you to dare trying</h2>
+            <h2>It is time for you to dare to try</h2>
             <h3>Beacuse you should be your own priority</h3>
             <button>Get Started</button>
         </div>
+    
 
     </main>
     <footer>
+        
+            <div class="company-footer">
+                <p>Company</p>
+                <a href="">About</a>
+                <a href="">Jobs</a>
+                <a href="">Get in touch</a>
+
+            </div>
+            <div class="course-container">
+                <p>Our courses</p>
+                <a href="">Web Development</a>
+                <a href="">HTML</a>
+                <a href="">CSS</a>
+                <a href="">JavaScript</a>
+                <a href="">Web Design</a>
+                <a href="">Roadmap</a>
+
+            </div>
+
+        
 
     </footer>
-    
+
+    <script src="script.js"></script>
+
 </body>
 </html>
