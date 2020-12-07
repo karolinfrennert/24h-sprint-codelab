@@ -13,13 +13,15 @@
     to{border-right-color: transparent;}
   }
 
-
-
-
+  :root{
+      --black: #0e1111;
+      --cta-red: #F64E4D;
+      --shadow: 3px 3px 2px #0e1111;
+  }
 
 body {
     font-family: 'JetBrains Mono', monospace; 
-    background-color: #000;  
+    background-color: var(--black);  
     color: white;
     margin: 2rem;
 }
@@ -42,29 +44,36 @@ button{
     font-size: 1.2rem;
     border-radius: 10px;
     align-self: center;
-    color: black;
+    color: white;
+    background-color: var(--cta-red);
+    text-shadow: var(--shadow);
+    padding: 0.8rem;
 }
 
 i{
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: var(--cta-red);
+    text-shadow: var(--shadow);
 }
 
 input {
     border-radius: 10px;
     height: 2rem;
     font-size: 1.2rem;
+    margin-top: 1rem;
+    color: var(--black);
 }
 
 main{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    
+    grid-template-columns: repeat(2, 1fr);    
     height: 200vh;
 }
 
 footer{
-    display: grid;
-    grid-template-columns: repeat(1fr, 2) ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     padding-bottom: 1rem ;
     margin-bottom: 2rem;
 }
@@ -79,12 +88,13 @@ a{
     grid-column: 1/3;
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
     font-size: 1.2rem;
     position: sticky;
     top: 0;    
-    
+    background-color: var(--black);
     padding: 2rem;
-    height: 3rem;
+    height: 4rem;
 }
 
 .halo-container{
@@ -98,10 +108,21 @@ a{
     
 }
 
+.txt-rotate{
+    color: var(--cta-red);
+    text-shadow: var(--shadow);
+}
+
 .h1-main{
     grid-column: 1/3; 
     grid-row: 1/2;   
     text-align: center;
+}
+
+.flask-animation{
+    font-size: 5rem;
+    
+    justify-self: center ;
 }
 
 .learning-container{
@@ -120,7 +141,25 @@ a{
     grid-row: 3/4;
 }
 
+.path{
+    grid-column: 1/2;
+    offset-path: path('M200,20 C20,100 200,0 200,100');
+    animation: move 3000ms infinite alternate ease-in-out;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--cta-red);
+    color: var(--cta-red);
+}
 
+@keyframes move {
+    0% {
+      offset-distance: 0%;
+    }
+    100% {
+      offset-distance: 100%;
+    }
+  }
 
 .roadmap-container{
     grid-column: 2/3;
@@ -139,16 +178,14 @@ a{
 
 .terms-of-service{
     font-size: 0.7rem;
+    padding: 0.5rem 0;
 }
 
-.company-footer{
-    grid-column: 1/2;
-    
-}
 
-.course-container{
-    grid-column: 2/3;
-}
+
+
+
+
 
 
 
