@@ -6,7 +6,7 @@ I love to code and I want to share this passion with other people. The best way 
 
 I decided to name this projecr codeLab, as coding is about trying out new things and testing what works. 
 
-###This project should include the following:
+### This project should include the following:
 *Loading times
 *Creating trust
 *Removing clutter
